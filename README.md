@@ -2,19 +2,13 @@
 
 I've find in Vagrant one of the best dev team's tool.
 
-In this repository you can find my experiments with Vagrant + Ansible.
-
-Each branch represents a specific development environment.
-
-#Laravel development branch
-
-In this branch you can find a ready environment to host your PHP web-app built with Laravel framework.
+This repository is in fact an extract of my vagrant_test repository.
 
 #Options
 
     - vars:
         document_root: PATH_OF_APPLICATION (es: /vagrant/NAME_OF_THE_PROJECT/public)
-        db: TYPE_DB
+        db: TYPE_DB        
 
 #Installing
 
