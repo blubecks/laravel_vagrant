@@ -2,13 +2,16 @@
 
 I've find in Vagrant one of the best dev team's tool.
 
-This repository is in fact an extract of my vagrant_test repository.
+This repository is in fact an extract of my vagrant_test repository (https://github.com/andreafspeziale/vagrant_test/tree/laravel-development).
+
+I'm actually using this vagrant to run my learning_laravel_5 sample app
+(https://github.com/andreafspeziale/learning_laravel_5).
 
 #Options
 
     - vars:
         document_root: PATH_OF_APPLICATION (es: /vagrant/NAME_OF_THE_PROJECT/public)
-        db: TYPE_DB        
+        db: TYPE_DB
 
 #Installing
 
