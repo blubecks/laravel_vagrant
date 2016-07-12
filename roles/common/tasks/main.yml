@@ -1,0 +1,6 @@
+---
+- include: curl.yml
+- include: git.yml
+- include: vim.yml
+- include: npm_packages.yml
+- include: composer.yml

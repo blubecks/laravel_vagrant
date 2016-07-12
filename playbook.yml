@@ -1,0 +1,15 @@
+---
+  - name: Laravel Dev Configuration with Ansible
+    hosts: all
+    sudo: True
+    vars:
+        document_root: /vagrant/learning-laravel-5/public
+        db: mysql
+
+    pre_tasks:
+      - name: update apt cache
+        apt: update_cache=yes
+    roles:
+      - database
+      - webserver
+      - common
