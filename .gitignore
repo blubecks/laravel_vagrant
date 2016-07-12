@@ -1,6 +1,4 @@
+.DS_Store
 .idea
 .vagrant
-envProject
-myAppName
-learning-laravel-5
 playbook.retry
