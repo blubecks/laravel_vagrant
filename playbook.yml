@@ -3,9 +3,19 @@
     hosts: all
     sudo: True
     vars:
-        document_root: /vagrant/learning-laravel-5/public
-        db: mysql
-
+        document_root: PATH_OF_APPLICATION (es: document_root: /vagrant/NAME_OF_THE_PROJECT/public)
+        #
+        # you can choose btw mysql or mongodb
+        #
+        db: TYPE_DB
+        #
+        # the following option will be considered only if TYPE_DB = mysql
+        #
+        mysql_user: MYSQL_USER
+        mysql_psw: MYSQL_PSW
+        db_name: NAME_OF_THE_PROJECT
+        phpmyadmin_user: PHPMYADMIN_USER
+        phpmyadmin_psw: PHPMYADMIN_PSW
     pre_tasks:
       - name: update apt cache
         apt: update_cache=yes
