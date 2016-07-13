@@ -11,11 +11,7 @@
         #
         # the following option will be considered only if TYPE_DB = mysql
         #
-        mysql_user: MYSQL_USER
-        mysql_psw: MYSQL_PSW
-        db_name: NAME_OF_THE_PROJECT
-        phpmyadmin_user: PHPMYADMIN_USER
-        phpmyadmin_psw: PHPMYADMIN_PSW
+        db_name: NAME_OF_DB_PROJECT
     pre_tasks:
       - name: update apt cache
         apt: update_cache=yes

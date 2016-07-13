@@ -11,9 +11,9 @@
   changed_when: false
 - name: update mysql root password for localhost root account
   mysql_user:
-    name: "{{ mysql_user }}"
+    name: "root"
     host: "{{ item }}"
-    password: "{{ mysql_psw }}"
+    password: "root"
   with_items: mysql_root_hosts.stdout_lines
 - name: copy .my.cnf file with root password credentials
   template:
@@ -24,9 +24,9 @@
     mode: 0600
 - name: mysql db setup
   mysql_db:
-    name: {{ db_name }}
+    name: "{{ db_name }}"
 - name: mysql user setup
   mysql_user:
     name: local
     password: local
-    priv: {{ db_name }}.*:ALL
+    priv: "{{ db_name }}.*:ALL"

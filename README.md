@@ -12,6 +12,7 @@ I'm actually using this vagrant to run my learning_laravel_5 sample app
     - vars:
         document_root: PATH_OF_APPLICATION (es: /vagrant/NAME_OF_THE_PROJECT/public)
         db: TYPE_DB
+        db_name: NAME_OF_DB_PROJECT
 
 #Installing
 
@@ -52,5 +53,10 @@ Once you runned vagrant up:
     - $ vagrant ssh
     - $ cd /vagrant
     - composer create-project --prefer-dist laravel/laravel NAME_OF_THE_PROJECT
+    - edit in your development .env file
+
+    DB_DATABASE=NAME_OF_DB_PROJECT
+    DB_USERNAME=root
+    DB_PASSWORD=root
 
 Go to your browser and type localhost:8080, you should see laravel welcome page
