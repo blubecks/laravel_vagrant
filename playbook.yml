@@ -3,7 +3,10 @@
     hosts: all
     sudo: True
     vars:
-        document_root: PATH_OF_APPLICATION (es: document_root: /vagrant/NAME_OF_THE_PROJECT/public)
+        #
+        # document root option for the virtualhost template
+        #
+        document_root: /vagrant/NAME_OF_THE_PROJECT/public
         #
         # you can choose btw mysql or mongodb
         #
