@@ -52,7 +52,9 @@ Once you runned vagrant up:
 
     - $ vagrant ssh
     - $ cd /vagrant
-    - composer create-project --prefer-dist laravel/laravel NAME_OF_THE_PROJECT
+    - bootstrap your laravel project
+        - from scratch: composer create-project --prefer-dist laravel/laravel NAME_OF_THE_PROJECT
+        - or git clone (and then install all the dependencies with composer install.. npm install and so on) 
     - edit in your development .env file
 
     DB_DATABASE=NAME_OF_DB_PROJECT
