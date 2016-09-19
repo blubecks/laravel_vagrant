@@ -2,8 +2,12 @@
   - name: add node package
     shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-  - name: install nodejs and npm
+  - name: install nodejs
     shell: apt-get install -y nodejs
+    sudo: yes
+
+  - name: install npm
+    shell: apt-get install -y npm
     sudo: yes
 
   - name: install nodejs essentials

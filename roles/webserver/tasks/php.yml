@@ -2,19 +2,20 @@
 - name: install php
   apt: pkg={{ item }} state=installed
   with_items:
-    - php5-fpm
-    - php5-cli
-    - php5-common
-    - php5-curl
-    - php5-json
+    - php-fpm
+    - php-cli
+    - php-common
+    - php-curl
+    - php-json
     - php-pear
-    - php5-gd
+    - php-gd
     - mcrypt
-    - php5-mcrypt
-    - php5-mysql
-    - php5-sqlite
-    - php5-xmlrpc
-    - libapache2-mod-php5
+    - php-mcrypt
+    - php-mysql
+    - php-sqlite
+    - php-xmlrpc
+    - libapache2-mod-php
+    - php-ldap
 - name: install phpMyAdmin
   apt: pkg={{ item }} state=present
   with_items:
